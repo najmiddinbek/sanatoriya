@@ -1,0 +1,493 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<div class="container">
+    <div class="flex main_flex">
+        <a href="/">
+            <svg data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000" class="home_svg" width="" height=""
+                viewBox="0 0 185 69" fill="none" xmlns="http://www.w3.org/500/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="185" height="69" fill="url(#pattern0)" />
+                <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_23_46" transform="matrix(0.00666667 0 0 0.0178744 0 -0.000483092)" />
+                    </pattern>
+                    <image id="image0_23_46" width="150" height="56"
+                        xlink:href="data:image/png;base64,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" />
+                </defs>
+            </svg>
+        </a>
+        <div data-aos="fade-leftfds" data-aos-duration="2000" data-aos-delay="3000">
+            <a class="add_user birinchi_add_user" href="/register" data-aos-delay="1500">Shaxsni tasdiqlash</a>
+        </div>
+    </div>
+    <div class="home_title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500">
+        <h1 class="title">Sog'liqni saqlash sohasida ilg'orlik yo'lida <span>birgamiz</span></h1>
+        <p class="second_title">Sog'lomlashtirish maskani, bu erda tajriba, innovatsiya va hamdardlik o'zaro
+            shaxsiylashtirilgan va hayotni
+            o'zgartiruvchi sog'liqni saqlash xizmatini taqdim etish uchun birlashadi.</p>
+        <div class="buttons">
+            <button class="add_user">
+                <a href="/add">
+                    User
+                    Qo`shish
+                </a>
+            </button>
+            <button class="all_user">
+                <a href="/products">
+                    Barcha
+                    Userlarni ko`rish
+                </a>
+            </button>
+        </div>
+        <p class="sub_text">Barcha huquqlar himoyalangan</p>
+    </div>
+
+
+    <h1 class="dashboard" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="2100">Xonalar</h1>
+    <div class="flex main_bosh_xonalar_div">
+        <div class="flex-2 bosh_xonalar" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1500">
+            <div>
+                <i class="bi bi-building-add"></i>
+            </div>
+            <div>
+                <p class="paragraf">250</p>
+                <h3 class="text">OPD TODAY</h3>
+            </div>
+        </div>
+        <div class="flex-2 bosh_xonalar" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1700">
+            <div>
+                <i class="bi bi-building-add"></i>
+            </div>
+            <div>
+                <p class="paragraf">250</p>
+                <h3 class="text">OPD TODAY</h3>
+            </div>
+        </div>
+        <div class="flex-2 bosh_xonalar" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1900">
+            <div>
+                <i class="bi bi-building-add"></i>
+            </div>
+            <div>
+                <p class="paragraf">250</p>
+                <h3 class="text">OPD TODAY</h3>
+            </div>
+        </div>
+        <div class="flex-2 bosh_xonalar" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="2100">
+            <div>
+                <i class="bi bi-building-add"></i>
+            </div>
+            <div>
+                <p class="paragraf">250</p>
+                <h3 class="text">OPD TODAY</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<style>
+    body {
+        background-image: url("https://cdn.wallpapersafari.com/68/12/gc62Iz.jpg");
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+        background-attachment: fixed;
+    }
+
+    .container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    span {
+        position: relative;
+        color: #271E4A;
+        transition: .5s;
+    }
+
+    span:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 10%;
+        background: #271E4A;
+        transition: .5s;
+        z-index: -1;
+    }
+
+    span:hover::before {
+        height: 100%;
+        color: #fff;
+    }
+
+    span:hover {
+        color: white;
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .flex-2 {
+        display: flex;
+    }
+
+    .dashboard {
+        margin-top: 30px;
+    }
+
+    .home_title {
+        width: 700px;
+        margin-top: 100px;
+    }
+
+    .buttons .all_user a {
+        color: #271E4A;
+    }
+
+    .buttons .all_user {
+        border-radius: 5px;
+        padding: 15px 35px;
+        border: 2px solid #271E4A;
+        background: transparent;
+        color: #271E4A;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        transition: .4s;
+    }
+
+    .add_user a {
+        color: white;
+    }
+
+    .add_user {
+        border-radius: 5px;
+        padding: 15px 35px;
+        border: none;
+        background: transparent;
+        background: #271E4A;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: .4s ease-in-out;
+        text-decoration: none;
+    }
+
+    .buttons .all_user:hover {
+        border: 2px solid transparent;
+    }
+
+    .buttons .add_user:hover {
+        background: transparent;
+        border: 2px solid #271E4A;
+        color: #271E4A;
+    }
+
+    .buttons .add_user:hover a {
+        color: #271E4A;
+    }
+
+    .title {
+        font-size: 65px;
+        margin: 0;
+    }
+
+    .second_title {
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .text,
+    .paragraf {
+        margin: 0;
+    }
+
+    thead {
+        background: #EDF4FC;
+    }
+
+    thead tr {
+        margin-right: -10px;
+        width: 100%;
+    }
+
+    thead tr th {
+        padding: 10px 73px;
+    }
+
+    .delete_button button {
+        background: transparent;
+        border: none;
+    }
+
+    .main_buttons {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        color: black;
+    }
+
+    .bosh_xonalar {
+        border-radius: 47px;
+        background: #FFF;
+        box-shadow: 0px 4px 15px 0px rgba(216, 210, 252, 0.64);
+        padding: 17px 30px;
+        max-width: 400px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .main_bosh_xonalar_div {
+        gap: 20px;
+    }
+
+    .home_svg {
+        width: 200px;
+    }
+
+    .bosh_xonalar i {
+        font-size: 40px;
+        color: orange;
+        margin-right: 20px;
+    }
+
+    @media (min-width: 0px) and (max-width: 500px) {
+        .container {
+            padding: 10px 5px;
+        }
+
+        .home_title {
+            width: 100%;
+        }
+
+        .title {
+            font-size: 40px;
+        }
+
+        .second_title {
+            width: 90%;
+        }
+
+        .add_user {
+            padding: 10px 20px;
+        }
+
+        .buttons .all_user {
+            padding: 10px 20px;
+        }
+
+        .main_bosh_xonalar_div {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin-left: 30px;
+        }
+
+        .main_flex {
+            width: 100%;
+        }
+
+        .home_svg {
+            display: none;
+        }
+
+        rect {
+            width: 140px;
+            height: 69px;
+        }
+
+        .main_bosh_xonalar_div {
+            display: block;
+            margin: 0;
+        }
+
+        .main_bosh_xonalar_div .bosh_xonalar {
+            margin-bottom: 20px;
+        }
+
+    }
+
+    @media (min-width: 500px) and (max-width: 767px) {
+        .container {
+            padding: 10px 5px;
+        }
+
+        .add_user {
+            padding: 10px 20px;
+        }
+
+        .buttons .all_user {
+            padding: 10px 20px;
+        }
+
+        .main_bosh_xonalar_div {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        .main_bosh_xonalar_div .bosh_xonalar {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .main_flex {
+            margin-top: -24px;
+        }
+
+        .home_title {
+            width: 90%;
+        }
+
+        .title {
+            font-size: 40px;
+        }
+
+        .second_title {
+            width: 90%;
+        }
+
+        .home_svg {
+            width: 30%;
+        }
+
+
+        .add_user {
+            padding: 10px 20px;
+        }
+
+        .birinchi_add_user {
+            margin-right: 70px;
+        }
+
+
+        rect {
+            width: 140px;
+            height: 69px;
+        }
+    }
+
+    @media (min-width: 767px) and (max-width: 1100px) {
+        .container {
+            padding: 10px 15px;
+        }
+
+        .add_user {
+            padding: 13px 25px;
+        }
+
+        .buttons .all_user {
+            padding: 13px 25px;
+        }
+
+        .main_bosh_xonalar_div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main_bosh_xonalar_div .bosh_xonalar {
+            margin-bottom: 20px;
+        }
+
+        .main_flex {
+            margin-top: -24px;
+        }
+
+        .home_title {
+            width: 90%;
+        }
+
+        .title {
+            font-size: 40px;
+        }
+
+        .second_title {
+            width: 90%;
+        }
+
+        .home_svg {
+            width: 30%;
+        }
+
+
+        .add_user {
+            padding: 13px 25px;
+        }
+
+        .birinchi_add_user {
+            margin-right: 70px;
+        }
+
+        .birinchi_add_user {
+            margin-right: 100px;
+        }
+    }
+
+    @media (min-width: 1100px) and (max-width: 1500px) {
+        .container {
+            padding: 10px 5px;
+        }
+
+        .add_user {
+            padding: 13px 25px;
+        }
+
+        .buttons .all_user {
+            padding: 13px 25px;
+        }
+
+        .main_bosh_xonalar_div {
+            gap: 5px;
+        }
+
+        .main_bosh_xonalar_div .bosh_xonalar {
+            padding: 17px 15px;
+        }
+
+        .main_flex {
+            margin-top: -24px;
+        }
+
+        .home_title {
+            width: 90%;
+        }
+
+        .title {
+            font-size: 40px;
+        }
+
+        .second_title {
+            width: 90%;
+        }
+
+        .birinchi_add_user {
+            margin-right: 70px;
+        }
+
+        .birinchi_add_user {
+            margin-right: 100px;
+        }
+    }
+</style>
+
+<script>
+    AOS.init();
+</script>

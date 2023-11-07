@@ -1,0 +1,270 @@
+<div class="w-75 mx-auto">
+
+    <h1 class="fs-1">"{{barchabemorlarsoni.yangiFoydalanuvchiIsmi}}" Ismi bemor ma'lumotlarini tahrirlash </h1>
+    <form action="/edit-bemor/{{barchabemorlarsoni._id}}" method="post">
+        <div class="inputs">
+            <div class="form-floating mb-3">
+                <input type="text" value="{{barchabemorlarsoni.yangiFoydalanuvchiIsmi}}" class="form-control"
+                    id="floatingInput" name="yangiFoydalanuvchiIsmi" placeholder="Ismni kiriting..">
+            </div>
+            <div class="form-floating">
+                <input type="text" value="{{barchabemorlarsoni.yangiFoydalanuvchiFamilyasi}}" class="form-control"
+                    id="floatingPassword" name="yangiFoydalanuvchiFamilyasi" placeholder="Familiyani kiriting...">
+            </div>
+            <div class="form-floating">
+                <input type="number" value="{{barchabemorlarsoni.yangiFoydalanuvchitelefonRaqami}}" class="form-control"
+                    id="floatingPassword" name="yangiFoydalanuvchitelefonRaqami"
+                    placeholder="Telefon raqamni kiriting...">
+            </div>
+            <div class="form-floating">
+                <input type="number" value="{{barchabemorlarsoni.yangifoydalanuvchiYoshi}}" class="form-control"
+                    id="floatingPassword" name="yangifoydalanuvchiYoshi" placeholder="Yoshini kiriting...">
+            </div>
+            <div class="form-floating mt-3 mb-3">
+                <input type="text" value="{{barchabemorlarsoni.yangifoydalanuvchiJinsi}}" class="form-control"
+                    id="floatingPassword" name="yangifoydalanuvchiJinsi" placeholder="Erkak yoki Ayol">
+            </div>
+            <div class="form-floating mt-3 mb-3">
+                <textarea class="form-control" placeholder="Yashash manzilini kiriting..." name="yashashManzili"
+                    id="floatingTextarea">{{barchabemorlarsoni.yashashManzili}}</textarea>
+            </div>
+            <div class="qoshish_button">
+                <button type="submit" class="add_user">Bemor malumotlarini tahrirlash</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<style>
+    body {
+        background: linear-gradient(119deg, #D8D2FC 17.58%, #D8D2FC 17.58%, #D8D2FC 17.59%, #FDE2E0 41.89%, #E6E4EA 68%, #E0E9F4 103.34%, rgba(230, 225, 232, 0.00) 103.35%, #E0E9F4 103.35%);
+    }
+
+    .container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        background: white;
+        width: 100%;
+        margin: 0 auto;
+        padding: 32px 5px;
+        border-radius: 47px;
+        box-shadow: 0px 4px 15px 0px rgba(216, 210, 252, 0.64);
+    }
+
+    .form-floating input {
+        width: 1000px;
+        padding: 10px 4px;
+        margin-bottom: 10px;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        stroke-width: 1px;
+        stroke: rgba(39, 30, 74, 0.50);
+        opacity: 0.6;
+        background: transparent;
+        outline: none;
+        opacity: .7;
+        transition: .1s;
+        color: #271E4A;
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    .add_user_2 {
+        border-radius: 5px;
+        padding: 8px 25px;
+        border: none;
+        border-radius: 10px;
+        background: #FF706F;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: .4s ease-in-out;
+        text-decoration: none;
+    }
+
+    .add_user_2 a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .qoshish_button {
+        display: flex;
+        justify-content: end;
+    }
+
+    .qoshish_button button {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .add_user {
+        border-radius: 5px;
+        padding: 8px 25px;
+        border: none;
+        background: transparent;
+        background: #271E4A;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: .4s ease-in-out;
+        text-decoration: none;
+    }
+
+    .buttons .all_user:hover {
+        background: #271E4A;
+        border: 2px solid transparent;
+        color: #fff;
+    }
+
+    .form-floating input:focus {
+        opacity: 1;
+        color: black;
+    }
+
+    .telefon,
+    .ism,
+    .jins {
+        margin-right: 50px;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 0px 4px;
+        margin-bottom: 20px;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        outline: none;
+        opacity: .7;
+        transition: .1s;
+        outline: none;
+        opacity: .7;
+        transition: .1s;
+        color: #271E4A;
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        opacity: 0.6;
+        border-bottom: 1px solid #271E4A;
+    }
+
+
+    textarea:focus {
+        opacity: 1;
+    }
+
+    @media (min-width: 0px) and (max-width: 500px) {
+            {
+            display: block;
+        }
+
+        .form-floating input {
+            width: 90%;
+        }
+
+        textarea {
+            width: 90%;
+        }
+
+
+        .telefon,
+        .ism,
+        .jins {
+            margin-right: 10px;
+        }
+
+        form {
+            display: block;
+            text-align: center;
+        }
+
+        .qoshish_button {
+            text-align: start;
+        }
+    }
+
+    @media (min-width: 500px) and (max-width: 900px) {
+            {
+            display: block;
+        }
+
+        .form-floating input {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        .telefon,
+        .ism,
+        .jins {
+            margin-right: 10px;
+        }
+
+        form {
+            display: block;
+            justify-content: start;
+        }
+
+        .inputs {
+            padding: 10px 20px;
+        }
+
+        .qoshish_button {
+            text-align: start;
+        }
+    }
+
+    @media (min-width: 900px) and (max-width: 1400px) {
+            {
+            display: block;
+        }
+
+        .form-floating input {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        .telefon,
+        .ism,
+        .jins {
+            margin-right: 10px;
+        }
+
+        form {
+            display: block;
+            justify-content: start;
+        }
+
+        .inputs {
+            padding: 10px 20px;
+        }
+
+        .qoshish_button {
+            text-align: start;
+        }
+    }
+</style>
